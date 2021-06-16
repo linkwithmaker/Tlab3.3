@@ -1,0 +1,48 @@
+/* Таблица пользователей */
+create table users (login varchar (30) primary key, password varchar (30) not null)
+insert into users values ('admin', 'admin')
+insert into users values ('user', 123456)
+
+/* Таблица сотрудников автосалона */
+create table Employee (ID_Emp varchar(30) primary key, Emp_name varchar(30), Post varchar(30), Passport_data varchar(30), Phone_number varchar(30), Salary varchar(30))
+insert into Employee values ('EMP1', 'Васильев П.К.', ' Директор автосалона',          '6812 65489', '+7 (908) 235-28-17', '220 000 руб.')
+insert into Employee values ('EMP2', 'Федоров Ф.Ф.', '  Администратор торгового зала', '3542 46594', '+7 (912) 881-34-91', '160 000 руб.')
+insert into Employee values ('EMP3', 'Зубенко П.А.', '  Менеджер по продажам',         '8991 54981', '+7 (912) 342-58-58', '65 000 руб.')
+insert into Employee values ('EMP4', 'Андропов В.С.', ' Менеджер по продажам',         '4897 25651', '+7 (950) 144-39-28', '70 000 руб.')
+insert into Employee values ('EMP5', 'Карпов С.А.', '   Менеджер по продажам',         '2178 26521', '+7 (908) 841-56-21', '81 000 руб.')
+insert into Employee values ('EMP6', 'Никольчук Н.С.', 'Главный бухгалтер',            '9851 15689', '+7 (950) 149-14-01', '80 000 руб.')
+insert into Employee values ('EMP7', 'Прохоров Н.Н.', ' Офис-менеджер',                '2798 29894', '+7 (950) 333-28-93', '45 000 руб.')
+
+/* Таблица Паспортные данные */
+create table Employee_1 (ID_Emp varchar(30) primary key, Emp_name varchar(30), SNLS varchar(30), INN varchar(30))
+insert into Employee_1 values ('EMP1', 'Васильев П.К.', '376 993 230 46', '343969608880')
+insert into Employee_1 values ('EMP2', 'Федоров Ф.Ф.', '710 297 916 90', '343969608880')
+insert into Employee_1 values ('EMP3', 'Зубенко П.А.', '611 724 172 55', '185373654231')
+insert into Employee_1 values ('EMP4', 'Андропов В.С.', '718 533 112 90', '076595731017')
+insert into Employee_1 values ('EMP5', 'Карпов С.А.', '692 597 102 46', '076595731017')
+insert into Employee_1 values ('EMP6', 'Никольчук Н.С.', '521 396 697 97', '721411180674')
+insert into Employee_1 values ('EMP7', 'Прохоров Н.Н.', '535 331 336 61', '052997190061')
+
+/* Таблица Дата рождения */
+create table Employee_2 (ID_Emp varchar(30) primary key, Emp_name varchar(30), Age varchar(30), WorkStartDate varchar(30), Office varchar(30))
+insert into Employee_2 values ('EMP1', 'Васильев П.К.', '45', '15.03.2005',  'Руководство')
+insert into Employee_2 values ('EMP2', 'Федоров Ф.Ф.', '38', '16.03.2005', 'Руководство' )
+insert into Employee_2 values ('EMP3', 'Зубенко П.А.', '25', '02.03.2007', 'Отдел продаж')
+insert into Employee_2 values ('EMP4', 'Андропов В.С.', '26', '25.04.2007','Отдел продаж')
+insert into Employee_2 values ('EMP5', 'Карпов С.А.', '32', '01.04.2007', 'Отдел продаж')
+insert into Employee_2 values ('EMP6', 'Никольчук Н.С.', '41', '20.03.2005', 'Бухгалтерия')
+insert into Employee_2 values ('EMP7', 'Прохоров Н.Н.', '30', '20.03.2005', 'Менеджмент')
+
+/* Таблица Образование */
+create table Employee_3 (ID_Emp varchar(30) primary key, Emp_name varchar(30), Degree varchar(30), BirthDate varchar(30), Adress varchar(30))
+insert into Employee_3 values ('EMP1', 'Васильев П.К.', 'Высшее', '01.01.1965',  'Буденного, 8-2')
+insert into Employee_3 values ('EMP2', 'Федоров Ф.Ф.', 'Высшее', '16.05.1972', 'Басовская, 1-1' )
+insert into Employee_3 values ('EMP3', 'Зубенко П.А.', 'Неполное высшее', '10.05.1985', 'Утрення, 5-2')
+insert into Employee_3 values ('EMP4', 'Андропов В.С.', 'Неполное высшее', '27.11.1984','Боровая, 1-7')
+insert into Employee_3 values ('EMP5', 'Карпов С.А.', 'Среднее специальное', '15.04.1978', 'Коврова, 6-5')
+insert into Employee_3 values ('EMP6', 'Никольчук Н.С.', 'Высшее', '01.10.1969', 'Шоссейная, 5-2')
+insert into Employee_3 values ('EMP7', 'Прохоров Н.Н.', 'Высшее', '20.02.1980', 'Омская, 5-23')
+/* Сотрудники - Automobiles
+   Паспортные данные - Equipment
+   Sales - Дата рождения
+   Employee - Образование*/
